@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       
+                <script type="text/javascript">
+
+                    function checa(){
+
+            valor1=new Number(document.formCalc.campo1.value);
+            valor2=new Number(document.formCalc.campo2.value);
+            valor3=new Number(document.formCalc.campo3.value);
+            valor4=new Number(document.formCalc.campo4.value);
+
+            var resultado = new Number(valor1+valor2+valor3+valor4);
+
+            if(resultado <=40 ){
+                alert("Resultado: " + resultado)
+                return True;
+            }
+            else{
+                alert("Resultado Inválido " + resultado)
+            }
+
+                    }
+
+                </script>
+
+    <title>soma</title>
+</head>
+<body>
+    
+    <form name="formCalc">
+        <p><label>nota 1: </label><input type="text" name="campo1" size="20"></p>
+        <p><label>nota 2: </label><input type="text" name="campo2" size="20"></p>
+        <p><label>nota 3: </label><input type="text" name="campo3" size="20"></p>
+        <p><label>nota 4: </label><input type="text" name="campo4" size="20"></p>
+        <p><input type="button" value="ok" onclick="checa()"></p>
+    </form>
+
+</body>
+</html>

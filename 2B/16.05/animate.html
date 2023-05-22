@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- oh no no wifi-->
+    <script src="/jQuey/jquery-3.7.0.min.js"></script>
+    <!-- oh no no wifi-->
+    <!-- oh yes yes wifi-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- oh yes yes wifi-->
+    <title>Animando com jQuery</title>
+
+    <script>
+
+        var euz = Math.random();
+
+        $(document).ready(function() {
+        $("#botao").click(function () {
+        $("div").animate({left: '700px'}, "slow");
+            });
+        });
+
+        $(document).ready(function() {
+        $("#botaoV").click(function () {
+        $("div").animate({left: '0px'}, "slow");
+            });
+        });
+
+    </script>
+    <style>
+        #botao{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    <div style="background-color: aqua;height: 100px;width: 100px;position: absolute;"></div>
+    <button id="botao">Clique me :D</button>
+    <button id="botaoV">Vorta >:C</button>
+</body>
+</html>

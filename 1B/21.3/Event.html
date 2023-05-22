@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+
+            function checaCookie()
+            {
+
+                if(navigator.cookieEnabled == true)
+                    alert("Cookies permited")
+                else
+                    alert("Nop Cookie Cookie!")
+
+            }
+
+            </script>
+            <script>
+            function imagemCarregada(){
+                alert("Imagem totals carregada")
+            }
+
+        </script>
+
+    <title>Eventos do Sistema - Load</title>
+</head>
+<body onload="checaCookie()">
+    Checando permissões de Cookies
+
+    <img src="/IMG/spiderman.jfif" alt="spiderocorpios" onload="imagemCarregada()"
+    width="200" height="264">
+
+</body>
+</html>

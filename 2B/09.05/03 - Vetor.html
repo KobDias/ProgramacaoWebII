@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script language="Javascript">
+        aluno = new Array( 3 );
+        var notas = new Array( 3 );
+
+        for (i = 0; i < 3 ; i++){
+            aluno[i] = prompt( 'Informe o nome do aluno ' + (i+1), '')
+        }
+
+        for (i = 0; i < 3 ; i++){           
+            
+                for(n=0;n<3;n++){
+                    
+                    notas[n] = prompt( 'Informe a nota ' +  (n+1) + ' do aluno(a): ' + aluno[i], '');
+               }   
+
+                    document.write('Notas de ' + aluno[i] + '<br>');
+                    document.write(' Nota 1 : ' + notas[0] + '<br>');
+                    document.write(' Nota 2 : ' + notas[1] + '<br>');
+                    document.write(' Nota 3 : ' + notas[2] + '<br>');   
+                    
+                }
+            
+           
+        
+    </script>
+
+    <title>Notas</title>
+</head>
+<body>
+</body>
+</html>

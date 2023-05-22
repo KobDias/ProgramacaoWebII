@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor 02</title>
+
+    <script>
+
+        // array
+
+        let vetor = [1, 2, 3, 4];
+        document.write("<pre>");
+        document.write("Mostrando todos los elementos do array vetor");
+
+        for(var i = 0; i < vetor.length; i++)
+            document.write(vetor[i] + " ");
+
+            document.write("</pre>")
+
+        document.write("<pre>")
+        document.write("\n", "Outra forma de fazer array --> ")
+            var vetor2 = new Array(1, 2, 3, 4)
+
+    // elementos do array vetor2
+    for(var i = 0; i<vetor2.length; i++)
+        document.write(vetor2[i] + " ")
+        document.write("</pre>")
+    
+    document.write("<pre>")
+    document.write("Alterando o elemento array vetor --> ")
+    vetor[0] = "geeksbr"
+
+    // mostrando valor na posição 0 do vetor
+    document.write(vetor[0])
+    document.write("</pre>")
+    
+    document.write("<pre>")
+    document.write("Adicionnado elementos no array vetor ")
+    document.write(" Usa-se o método push, adiciona no final --> ")
+    vetor.push(5);
+    document.write(vetor[4])
+    document.write("</pre>")
+    
+    document.write("<pre>")
+    document.write("Removendo elemento do array vetor ")
+    document.write(" usa-se o método pop, remove o último elemento -->")
+    vetor.pop();
+    document.write(vetor);
+    document.write("</pre>")
+    ["geeksbr", 5, 6, 2, 3, 4]
+    
+    document.write("<pre>")
+    document.write("Adicionando os novos elementos a partir do Indice 1 --> ")
+    vetor.splice(1, 0, 5, 6)
+    document.write(vetor)
+    document.write("</pre>")
+    
+    document.write("<pre>")
+    document.write("Agora irei eliminar o primeiro elemento ")
+    document.write(" do vetor, ou seja, o elemento geeksbr --> ")
+    vetor.splice(0, 1);
+    document.write(vetor)
+    document.write("</pre>")
+    
+    document.write("<pre>")
+    document.write("Exemplo de array bidimensional ")
+    var matriz = [[1,2],3,4]
+
+    document.write("Iterando na matriz para mostrar os elementos --> ")
+    for(var i = 0; i < matriz.length; i++)
+    {
+        for(var j = 0; j < matriz.length; j++)
+        {
+            document.write(matriz[i][j]);
+        }
+    }
+    document.write("</pres>")
+    
+    
+
+
+
+    </script>
+
+</head>
+<body>
+    
+
+
+</body>
+</html>

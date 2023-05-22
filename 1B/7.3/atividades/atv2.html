@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script>
+    function checa(){
+
+        base=new Number(document.formCalc.base.value);
+        altura =new Number(document.formCalc.altura.value);
+
+        var resultado = new Number((base*altura)/2);
+
+        if((base == 0) || (altura == 0)){
+            alert("Resultado inválido")
+        }
+        else{
+            alert("Resultado: " + resultado)
+            return True
+        }
+
+                }
+
+            </script>
+
+    <title>Atv2</title>
+</head>
+<body>
+
+    <form name="formCalc">
+        <p><label>Base: </label><input type="text" name="base" size="20"></p>
+        <p><label>Altura: </label><input type="text" name="altura" size="20"></p>
+        <p><input type="button" value="ok" onclick="checa()"></p>
+    </form>
+
+</body>
+</html>

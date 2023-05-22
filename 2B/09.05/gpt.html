@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notas</title>
+</head>
+<body>
+    <script>
+        const alunos = new Array(3);
+        const notas = new Array(3);
+
+        for (let i = 0; i < 3; i++) {
+            alunos[i] = prompt('Informe o nome do aluno ' + (i+1), '');
+        }
+
+        for (let i = 0; i < 3; i++) {
+            let somaNotas = 0;
+            for (let n = 0; n < 3; n++) {
+                notas[n] = parseInt(prompt('Informe a nota ' + (n+1) + ' do aluno(a): ' + alunos[i], ''));
+                somaNotas += notas[n];
+            }
+            const media = somaNotas / 3;
+            document.write('Média das notas de ' + alunos[i] + ': ' + media.toFixed(2) + '<br>');
+        }
+    </script>
+</body>
+</html>
